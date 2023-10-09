@@ -41,7 +41,7 @@ import {
   PackageManager,
   AgentResolver,
   FSCircuitStorage,
-} from "@0xpolygonid/js-sdk";
+} from "@uptsmart/js-sdk";
 import path from "path";
 import dotenv from "dotenv";
 dotenv.config();

@@ -1,4 +1,4 @@
-import { byteEncoder, createSchemaHash } from "@0xpolygonid/js-sdk";
+import { byteEncoder, createSchemaHash } from "@uptsmart/js-sdk";
 import { Path, getDocumentLoader, Merklizer } from "@iden3/js-jsonld-merklization";
 
 const pathToCredentialSubject =
@@ -7,7 +7,7 @@ const pathToCredentialSubject =
 
 export async function generateRequestData() {
 
-    const url = `https://raw.githubusercontent.com/iden3/claim-schema-vocab/main/schemas/json-ld/kyc-v101.json-ld`;
+    const url = `http://47.242.107.228:3003/schemas/json-ld/kyc-v101.json-ld`;
     const type = "KYCAgeCredential";
     const fieldName = "birthday"; // in form of field.field2.field3 field must be present in the credential subject
 
